@@ -55,9 +55,10 @@
   - 첫 번째 테이블의 모든 행들이 두 번째 테이블의 모든 행과 조인이 되는 경우
   - 테이블의 갯수가 N이라면 카티션 곱을 피하기위해 적어도 N-1개를 등가해야한다.
 
-      select
-      ename, e.deptno, dname
-      from emp e, dept d;
+        ``  select
+        ename, e.deptno, dname
+        from emp e, dept d;
+        ``
 
 - 이 경우 조인 조건이 정의되지 않았기 때문에 모든 데이터가 검색된다.
   > where e.deptno = d.deptno를 써줘야 한다.
